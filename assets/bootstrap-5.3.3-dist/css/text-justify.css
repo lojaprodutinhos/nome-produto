@@ -1,0 +1,19 @@
+.text-justify {
+    text-align: justify;
+    text-justify: auto;
+}
+
+.text-justify-inter-word {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.text-justify-inter-character {
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+.text-justify-initial {
+    text-align: justify;
+    text-justify: initial;
+}
