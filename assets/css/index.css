@@ -37,9 +37,15 @@ body{
     align-content: center;
     background: rgba(255,255,255,0.9);
     z-index: 2;
-    font-family: 'Teko','Avenir Next Condensed','Impact',sans-serif;
+    font-family: "brandon-grotesque", Sans-serif;
+    text-transform: uppercase;
     font-size: 3.5vh;
-    color: none;
+}
+
+.topic-LP p {
+    margin-bottom: 0px;
+    opacity: 0.5;
+    font-weight: 600;
 }
 
 .terceira-sect{

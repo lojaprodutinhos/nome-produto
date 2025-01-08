@@ -5,16 +5,19 @@
 .nav-item{
     text-decoration: none;
     color: #000;
-    font-family: 'Teko','Avenir Next Condensed','Impact','monospace';
-    font-size: 3.5vh;
+    font-family: "brandon-grotesque", Sans-serif;
+    text-transform: uppercase;
+    font-size: 3vh;
+    font-weight: 600;
+    color: #000;
+    flex: 0 0 auto;
+    width: 12%;
+    opacity: 0.5;
 }
 
 .logo-clp{
     height: auto;
-    translate: 50px 20px;
+    translate: 80px 0px;
     margin: auto;
+    background: rgba(0,0,250,0.4);
 }
-/* 
-.campo-pesquisa {
-    width: ;
-} */
