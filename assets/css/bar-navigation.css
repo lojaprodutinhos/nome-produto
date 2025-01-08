@@ -1,0 +1,20 @@
+.rolagem-lenta {
+    scroll-margin: 1px;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Teko','Avenir Next Condensed','Impact','monospace';
+    font-size: 3.5vh;
+}
+
+.logo-clp{
+    height: auto;
+    translate: 50px 20px;
+    margin: auto;
+}
+/* 
+.campo-pesquisa {
+    width: ;
+} */

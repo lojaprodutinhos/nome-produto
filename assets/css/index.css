@@ -1,8 +1,53 @@
-.banner-index{
-    height: 600px;
+body{
+    -webkit-background-size: 4000px;
+    -moz-background-size: 4000px;
+    -o-background-size: 4000px;
+    background-size: 4000px;
 }
 
-.video-size {
-   width: 100%;
-   height: auto;
+.primeira-sect{
+    height: 20rem;
+    font-family: "Montserrat", "Century Gothic", CenturyGothic, AppleGothic, "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.area-lp{
+    background: rgba(255,255,255,0.9);
+}
+
+.logo-lp {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 16%;
+    height: 100px;
+    align-content: center;
+}
+
+.segunda-sect {
+    height: 5rem;
+    align-content: center;
+}
+
+.topic-LP{
+    height: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* margin-bottom: 10px; */
+    border-radius: 50px;
+    background-color: #dee2e6;
+    align-content: center;
+    background: rgba(255,255,255,0.9);
+    z-index: 2;
+    font-family: 'Teko','Avenir Next Condensed','Impact',sans-serif;
+    font-size: 3.5vh;
+    color: none;
+}
+
+.terceira-sect{
+    height: 20rem;
+}
+
+.area-courses{
+    background: rgba(255,255,255,0.9);
+    height: 100%;
+    margin-top: 8px;
 }

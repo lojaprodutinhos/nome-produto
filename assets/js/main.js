@@ -2,9 +2,9 @@ require.config({
   paths: {
     fontawesome: 'vendor/fontawesome/js/fontawesome.min',
     'fontawesome/solid': 'vendor/fontawesome/js/solid.min',
-    'fontawesome/brands': 'vendor/fontawesome/js/brands.min'
+    'fontawesome/brands': 'vendor/fontawesome/js/brands.min',
     // Pro files can be added like this:
-    // 'fontawesome/regular': 'vendor/fontawesome/regular.min',
+    'fontawesome/regular': 'vendor/fontawesome/regular.min',
     // 'fontawesome/light': 'vendor/fontawesome/light.min',
     // 'fontawesome/thin': 'vendor/fontawesome/thin.min',
     // 'fontawesome/duotone': 'vendor/fontawesome/duotone.min'
