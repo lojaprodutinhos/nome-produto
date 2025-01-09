@@ -7,11 +7,11 @@ body{
 
 .primeira-sect{
     height: 20rem;
-    font-family: "Montserrat", "Century Gothic", CenturyGothic, AppleGothic, "Trebuchet MS", Helvetica, sans-serif;
+    font-family: "Montserrat", "Century Gothic", 'CenturyGothic', 'AppleGothic', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .area-lp{
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.8);
 }
 
 .logo-lp {
@@ -31,11 +31,10 @@ body{
     height: 70px;
     margin-left: 10px;
     margin-right: 10px;
-    /* margin-bottom: 10px; */
     border-radius: 50px;
     background-color: #dee2e6;
     align-content: center;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.8);
     z-index: 2;
     font-family: "brandon-grotesque", Sans-serif;
     text-transform: uppercase;
@@ -49,11 +48,41 @@ body{
 }
 
 .terceira-sect{
-    height: 20rem;
+    height: auto;
 }
 
 .area-courses{
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.8);
     height: 100%;
     margin-top: 8px;
+    font-family: "Montserrat", "Century Gothic", 'CenturyGothic', 'AppleGothic', "Trebuchet MS", Helvetica, sans-serif;
+
+}
+
+.cursos-procurados{
+    border-radius: 10px;
+    margin: 0px 10px 10px 10px;
+}
+
+.thumbnail-curso-lp{
+    border-bottom: 1px solid #dee2e6;
+} 
+
+.thumbnail-curso-lp img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.descricao-curso-lp{
+    padding-bottom: 5px;
+}
+.descricao-curso-lp div {
+    margin-left: 20px;
+}
+
+.descricao-curso-lp p{
+    font-family: "Montserrat", "Century Gothic", 'CenturyGothic','AppleGothic', "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 2vh;
+    margin: 3px 3px 3px 20px;
 }
