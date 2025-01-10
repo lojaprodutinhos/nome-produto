@@ -1,8 +1,8 @@
 body{
-    -webkit-background-size: 4000px;
-    -moz-background-size: 4000px;
-    -o-background-size: 4000px;
-    background-size: 4000px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .primeira-sect{
@@ -38,13 +38,13 @@ body{
     z-index: 2;
     font-family: "brandon-grotesque", Sans-serif;
     text-transform: uppercase;
-    font-size: 3.5vh;
+    font-size: 2vh;
+    font-weight: 600;
 }
 
-.topic-LP p {
+.topic-LP > p{
     margin-bottom: 0px;
-    opacity: 0.5;
-    font-weight: 600;
+    opacity: 0.6;
 }
 
 .terceira-sect{
@@ -53,15 +53,13 @@ body{
 
 .area-courses{
     background: rgba(255,255,255,0.8);
-    height: 100%;
-    margin-top: 8px;
+    height: auto;
     font-family: "Montserrat", "Century Gothic", 'CenturyGothic', 'AppleGothic', "Trebuchet MS", Helvetica, sans-serif;
-
 }
 
 .cursos-procurados{
     border-radius: 10px;
-    margin: 0px 10px 10px 10px;
+    width: calc((100% - (4 - 1 ) * 1.6rem) / 4);
 }
 
 .thumbnail-curso-lp{
@@ -75,14 +73,14 @@ body{
 }
 
 .descricao-curso-lp{
-    padding-bottom: 5px;
-}
-.descricao-curso-lp div {
-    margin-left: 20px;
+    padding-bottom: 10px;
+    height: auto;
 }
 
-.descricao-curso-lp p{
+.descricao-curso-lp > p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
     font-family: "Montserrat", "Century Gothic", 'CenturyGothic','AppleGothic', "Trebuchet MS", Helvetica, sans-serif;
     font-size: 2vh;
-    margin: 3px 3px 3px 20px;
 }

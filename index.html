@@ -6,15 +6,16 @@
     <link href="assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="assets/css/index.css" type="text/css" rel="stylesheet">
     <link href="assets/css/text-justify.css" type="text/css" rel="stylesheet">
-    <link href="assets/css/bar-navigation.css" type="text/css" rel="stylesheet" href="">
+    <link href="assets/css/bar-navigation.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/footer-navigation.css" type="text/css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body style="background-image: url(imagens/plano_de_fundo/plano-de-fundo-3.png)">
+<body style="background-image: url(imagens/plano_de_fundo/plano-de-fundo-preto-branco.png)">
     <header class="w-100 text-center">
             <nav class="navbar m-0 bg-body-tertiary">
                 <div class="nav w-100 align-items-center justify-content-end">
-                    <a href="#" class="logo-clp z-1 position-absolute start-0 top-0">
-                        <img src="imagens/logo/LOGO_EV2W.png" width="150" height="70">
+                    <a href="#" class="logo-clp z-1 p-2">
+                        <img src="imagens/logo/LOGO_HEADER.png" width="150" height="35">
                     </a>
                     <form action="#" class="col-4 mx-5">
                         <div class="input-group campo-pesquisa">
@@ -100,81 +101,63 @@
         </div>
     </section>
     <section class="container-fluid terceira-sect py-4">
-        <div class="row area-courses px-5">
+        <div class="row area-courses mt-1 px-5">
             <p class="h2 my-3">Cursos com as maiores classificações e os mais procurados</p>
-            <div class="col cursos-procurados border p-0">
+        </div>
+        <div class="row area-courses carousel justify-content-between px-5">
+            <div id="cartaoCurso" class="cursos-procurados mb-4 border p-0">
                 <div class="col thumbnail-curso-lp">
                     <img src="imagens/terceira sessão/python.png">
                 </div>
                 <div class="col descricao-curso-lp">
-                    <p class="fw-bold">Titulo</p>
-                    <p class="text-secondary">Criador</p>
-                    <p>
-                    <i class="fa-solid fa-star"></i>
-                    </p>
-                    <p class="fw-bold">R$ 25,00</p>
-                    <div class="btn btn-warning fw-bold text-light p-0 text-center">
-                    <p class="m-1">Mais vendidos</p> 
+                    <p class="fw-bold m-2">Titulo jjkfkldssdlkdkldslkkl sdasd </p>
+                    <p class="text-secondary m-2">Criador</p>
+                    <p class="m-2"><i class="fa-solid fa-star"></i></p>
+                    <p class="fw-bold m-2">R$ 25,00</p>
+                    <div class="m-2 btn btn-warning fw-bold text-light px-3 text-center">
+                        <p class="m-0">Mais vendidos</p> 
                     </div>
                 </div>
             </div>
-            <div class="col cursos-procurados border p-0">
-                <div class="col thumbnail-curso-lp">
-                    <img src="imagens/terceira sessão/python.png">
+            <script>
+                duplicateDiv("cartaoCurso");
+            </script>
+        </div>
+    </section>
+    <footer class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-4 my-4 border-end text-start border-light">
+                <div class="w-100 d-flex align-items-end">
+                    <img src="imagens/logo/LOGO_FOOTER2.png" alt="package" width="120" height="40">
+                    <p class="ms-2 margin-minus"> © 2025 Academia Vought, Inc. </p>
                 </div>
-                <div class="col descricao-curso-lp">
-                    <p class="fw-bold">Titulo</p>
-                    <p class="text-secondary">Criador</p>
-                    <p>
-                    <i class="fa-solid fa-star"></i>
-                    </p>
-                    <p class="fw-bold">R$ 25,00</p>
-                    <div class="btn btn-warning fw-bold text-light p-0 text-center">
-                    <p class="m-1">Mais vendidos</p> 
-                    </div>
+                <div class="w-100 mt-3">
+                    <p>Empoderar pessoas pelo conhecimento, conectando sonhos</p> 
+                    <p>a oportunidades e transformando vidas com educação</p> 
+                    <p>acessível, prática e transformadora para todos.</p>
                 </div>
-            </div>
-            <div class="col cursos-procurados border p-0">
-                <div class="col thumbnail-curso-lp">
-                    <img src="imagens/terceira sessão/python.png">
-                </div>
-                <div class="col descricao-curso-lp">
-                    <p class="fw-bold">Titulo</p>
-                    <p class="text-secondary">Criador</p>
-                    <p>
-                    <i class="fa-solid fa-star"></i>
-                    </p>
-                    <p class="fw-bold">R$ 25,00</p>
-                    <div class="btn btn-warning fw-bold text-light p-0 text-center">
-                    <p class="m-1">Mais vendidos</p> 
-                    </div>
+                <div class="w-100 mt-3">
+                    <p>Versão 1.0</p> 
                 </div>
             </div>
-            <div class="col cursos-procurados border p-0">
-                <div class="col thumbnail-curso-lp">
-                    <img src="imagens/terceira sessão/python.png">
-                </div>
-                <div class="col descricao-curso-lp">
-                    <p class="fw-bold">Titulo</p>
-                    <p class="text-secondary">Criador</p>
-                    <p>
-                    <i class="fa-solid fa-star"></i>
+            <div class="col-3 my-4 text-start align-content-center">
+                <p class="menu-footer">Início</p>
+                <p class="menu-footer">Cursos</p>
+                <p class="menu-footer">Contato</p>
+            </div>
+            <div class="col-4 my-4 border-start border-light">
+                <div>
+                    <p>Nossas redes sociais
+                    <i class="fa-brands ms-1 fa-instagram icones-footer"></i>
+                    <i class="fa-brands fa-facebook icones-footer"></i>
                     </p>
-                    <p class="fw-bold">R$ 25,00</p>
-                    <div class="btn btn-warning fw-bold text-light p-0 text-center">
-                    <p class="m-1">Mais vendidos</p> 
-                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <footer>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     <script data-main="assets/js/main" src="assets/js/require.js"></script>
     <script src="assets/js/bar-navigation.js"></script>
-
 </body>
 </html>

@@ -1,0 +1,24 @@
+footer{
+    height: auto;
+    background-color: #000;
+    background: rgba(50, 50, 50, 0.8);
+    font-size: .875em;
+    color: #fff;
+}
+
+footer p{
+    margin-bottom: 0px;
+}
+
+.margin-minus{
+    margin-bottom: -4px;
+}
+
+.menu-footer{
+    margin: 15px 0px 15px 0px;
+    width: 33%;
+}
+
+.icones-footer {
+    color: #fff;
+}

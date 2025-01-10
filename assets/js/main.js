@@ -30,3 +30,40 @@ require.config({
 require(['fontawesome'], function (fontawesome) {
   console.log('Congrats, Font Awesome is installed using Require.js')
 })
+
+
+function duplicateDiv(cartaoCurso) {
+  const originalDiv = document.getElementById(cartaoCurso);
+
+  if (!originalDiv) {
+      console.error(`Div com o ID "${cartaoCurso}" não encontrada.`);
+      return;
+  }
+
+  const parent = originalDiv.parentNode;
+
+  for (let i = 1; i <= 3; i++) {
+      // Cria uma nova div
+      const newDiv = document.createElement('div');
+
+      //Copia a classe
+      newDiv.className = originalDiv.className;
+
+      // Copia os estilos da original
+      newDiv.style.cssText = originalDiv.style.cssText;
+
+      // Copia o conteúdo textual da original
+      newDiv.innerHTML = originalDiv.innerHTML;
+
+      // Define um novo ID para a nova div
+      newDiv.id = `${cartaoCurso}-clone-${i}`;
+
+      // Adiciona a nova div ao pai da original
+      parent.appendChild(newDiv);
+  }
+}
+
+// Exemplo de uso:
+// Suponha que exista uma div com o ID "myDiv" no HTML
+// <div id="myDiv" style="background-color: lightblue; width: 100px; height: 100px;">Conteúdo original</div>
+duplicateDiv("cartaoCurso");
