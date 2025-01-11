@@ -1,5 +1,5 @@
 async function duplicateDiv(duplicateTag) {
-  await new Promise(resolve => setTimeout(resolve, 50)); // 100ms de atraso
+  await new Promise(resolve => setTimeout(resolve, 100)); // 100ms de atraso
   const originalDiv =  document.getElementById(duplicateTag);
 
   if (!originalDiv) {
