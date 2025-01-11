@@ -1,0 +1,14 @@
+.primeira-sect{
+    font-family: "Montserrat", "Century Gothic", 'CenturyGothic', 'AppleGothic', "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.area-lp{
+    background: rgba(255,255,255,0.8);
+}
+
+.logo-lp {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 16%;
+    align-content: center;
+}

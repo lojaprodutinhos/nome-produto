@@ -1,0 +1,32 @@
+.area-courses{
+    background: rgba(255,255,255,0.8);
+    font-family: "Montserrat", "Century Gothic", 'CenturyGothic', 'AppleGothic', "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.cursos-procurados{
+    border-radius: 10px;
+    width: calc((100% - (4 - 1 ) * 1.6rem) / 4);
+}
+
+.thumbnail-curso-lp{
+    border-bottom: 1px solid #dee2e6;
+} 
+
+.thumbnail-curso-lp img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.descricao-curso-lp{
+    padding-bottom: 10px;
+    height: auto;
+}
+
+.descricao-curso-lp > p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-family: "Montserrat", "Century Gothic", 'CenturyGothic','AppleGothic', "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 2vh;
+}
