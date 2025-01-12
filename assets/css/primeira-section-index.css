@@ -12,3 +12,31 @@
     width: 16%;
     align-content: center;
 }
+
+@media (max-width: 991.98px) {
+    .area-lp{
+        flex-direction: column;
+
+    }
+    .titulo-primeira-sect{
+        text-align: justify;
+    }
+    .area-logo-lp{
+        display: none;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        background-color: #dee6e2;
+    }
+}
+
+@media (max-width: 398px){
+    .titulo-primeira-sect{
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 992px){ 
+    .carousel-container{
+        display: none;        
+    }
+}
