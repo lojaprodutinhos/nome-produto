@@ -16,29 +16,19 @@
     height: 12vh;
 }
 
+@media (max-width: 1243px){ 
+    .titulo-primeira-sect{
+        font-size: 2.4vw;
+    }
+}
+
 @media (max-width: 991.98px) {
-    /* .area-lp{
-        flex-direction: column;   
+    .area-logo-lp{
+        display: none;
     }
     .titulo-primeira-sect{
-        text-align: justify;
+        font-size: 5vw;
     }
-    */.area-logo-lp{
-        display: none;
-    }
-    /*
-    .carousel-control-prev-icon, .carousel-control-next-icon{
-        background-color: #dee6e2;
-    }
-    .carousel-item{
-        text-align: center;
-        display: none;
-    }
-    .carousel-item.active{
-        display: flex !important;
-        flex-direction: row;
-    } */
-
     .wrapper {
         width: 100%;
         overflow-x: scroll;
@@ -60,18 +50,24 @@
         width: 10vw; 
         height: 10vh;
     }
-
     .angle-carousel{
         translate: 0% 26%;
         border-radius: 50%;
         width: 50px;
         height: 50px;
         text-align: center;
-        color: rgba(255,255,255,0.9);
+        color: rgba(255,255,255,0.3); 
+        /* pointer-events: none; Ensure these divs don't block interactions */
+        transition: background-color 0.3s ease; /* Smooth transition */
+        background-color: transparent;
+
     }
 }
 
 @media (max-width: 630px){
+    .titulo-primeira-sect{
+        font-size: 4vw;
+    }
     .slider > div > img {
         width: 13vw !important;
         height: 10vh !important;
@@ -89,7 +85,7 @@
 }
 
 @media (min-width: 992px){ 
-    .carousel-container{
+    .slide{
         display: none;        
     }
 }

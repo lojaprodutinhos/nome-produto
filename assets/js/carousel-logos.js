@@ -1,36 +1,41 @@
 function procurandoCarousel(carouselContainer) {
-    let lastScrollLeft = 0;
+    // let lastScrollLeft = 0;
     const observer = new MutationObserver(() => {
         const scrollContainer = document.getElementById(carouselContainer);
         if (scrollContainer) {
             observer.disconnect(); // Para de observar quando o elemento for encontrado
         }
+        const leftIndicator = document.getElementById("angle-left");
+        const rightIndicator = document.getElementById("angle-right");
+        let lastScrollLeft = 0;
+        let scrollTimeout;
         scrollContainer.addEventListener('scroll', () => {
+            clearTimeout(scrollTimeout); // Reset the timeout on every scroll event
             const currentScrollLeft = scrollContainer.scrollLeft;
-            const angleLeft = document.getElementById("angle-left");
-            const angleRight = document.getElementById("angle-right");
-
-
             if (currentScrollLeft > lastScrollLeft) {
-                console.log('Scrolling to the right');
-                angleLeft.setAttribute("style", "background: rgba(0,0,0,0.5);");
+                // Scrolling to the right
+                rightIndicator.style.backgroundColor = 'rgba(0,0,0,0.4)';
+                leftIndicator.style.backgroundColor = 'transparent';
+                rightIndicator.style.color = 'rgba(255,255,255,1)';
+                leftIndicator.style.color = 'transparent';
             } else if (currentScrollLeft < lastScrollLeft) {
-                console.log('Scrolling to the left');
-                angleRight.setAttribute("style", "background: rgba(0,0,0,0.5);");
+                // Scrolling to the left
+                leftIndicator.style.backgroundColor = 'rgba(0,0,0,0.4)';
+                rightIndicator.style.backgroundColor = 'transparent';
+                leftIndicator.style.color = 'rgba(255,255,255,1)';
+                rightIndicator.style.color = 'transparent';
             }
-        
-            lastScrollLeft = currentScrollLeft; // Atualiza a posição anterior
-
-            clearTimeout(lastScrollLeft);
-            lastScrollLeft = setTimeout(() => {
-                console.log('Scroll horizontal parado');
-                angleLeft.setAttribute("style", "background: none;");
-                angleRight.setAttribute("style", "background: none;");
-            }, 200);
-            });
+            lastScrollLeft = currentScrollLeft;
+            // Reset the background colors when scrolling stops
+            scrollTimeout = setTimeout(() => {
+                leftIndicator.style.backgroundColor = 'transparent';
+                rightIndicator.style.backgroundColor = 'transparent';
+                rightIndicator.style.color = 'transparent';
+                leftIndicator.style.color = 'transparent';
+            }, 200); // Adjust the delay as needed
+        });
     });
     // Configura o observer para monitorar alterações no DOM
     observer.observe(document.body, { childList: true, subtree: true });
 }
-
 procurandoCarousel("scrollContainer");
