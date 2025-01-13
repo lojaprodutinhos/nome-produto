@@ -33,8 +33,6 @@
 
     .navbar-expand-lg .navbar-collapse .pesquisa {
         display: table-footer-group;
-        padding: 50%;
-        width: 50%;
     }
 
     .navbar-expand-lg .navbar-collapse .menuNavBar{

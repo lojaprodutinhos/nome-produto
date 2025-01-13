@@ -7,16 +7,18 @@
 }
 
 .logo-lp {
-    margin-top: 15px;
-    margin-bottom: 15px;
     width: 16%;
-    align-content: center;
+    margin-block: 10px;
+}
+
+.logo-lp > img {
+    width: 7vw;
+    height: 12vh;
 }
 
 @media (max-width: 991.98px) {
     .area-lp{
-        flex-direction: column;
-
+        flex-direction: column;   
     }
     .titulo-primeira-sect{
         text-align: justify;
@@ -27,11 +29,30 @@
     .carousel-control-prev-icon, .carousel-control-next-icon{
         background-color: #dee6e2;
     }
+    .carousel-item{
+        text-align: center;
+        display: none;
+    }
+    .carousel-item.active{
+        display: flex !important;
+        flex-direction: row;
+    }
 }
 
-@media (max-width: 398px){
+@media (max-width: 600px){
+    .carousel-item > div > img {
+        width: 13vw !important;
+        height: 10vh !important;
+    }
+}
+
+@media (max-width: 426px){
     .titulo-primeira-sect{
-        font-size: 1.5em;
+        font-size: 1em;
+    }
+    .carousel-item > div > img {
+        width: 17vw !important;
+        height: 10vh !important;
     }
 }
 

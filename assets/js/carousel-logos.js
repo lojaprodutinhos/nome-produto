@@ -10,18 +10,22 @@ function createCarouselItems(items, itemsPerSlide) {
             // Cria um novo slide
             currentSlide = document.createElement("div");
             currentSlide.classList.add("carousel-item");
-            if (index === 0) currentSlide.classList.add("active"); // Primeiro slide ativo
+            if (index === 0) currentSlide.classList.add("active", "px-5"); // Primeiro slide ativo
             carouselContent.appendChild(currentSlide);
         }
 
+        const itemDiv = document.createElement("div");
+        itemDiv.setAttribute("class","col");
+
         // Cria o elemento do item
-        const itemDiv = document.createElement("img");
-        itemDiv.setAttribute("src",`/nome-produto/imagens/primeira_sect/logo_${item}.png`);
-        itemDiv.setAttribute("height", "80");
-        itemDiv.setAttribute("width", "100");
-        itemDiv.setAttribute("alt", "package");
+        const itemDivImg = document.createElement("img");
+        itemDivImg.setAttribute("src",`/nome-produto/imagens/primeira_sect/logo_${item}.png`);
+        itemDivImg.setAttribute("style", "width: 11vw; height: 10vh;");
+        itemDivImg.setAttribute("alt", "package");
+        itemDivImg.setAttribute("id","logo-LP");
 
         // Adiciona o item ao slide atual
+        itemDiv.appendChild(itemDivImg);
         currentSlide.appendChild(itemDiv);
     });
 }
