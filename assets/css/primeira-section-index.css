@@ -1,27 +1,22 @@
 .primeira-sect{
     font-family: "Montserrat", "Century Gothic", 'CenturyGothic', 'AppleGothic', "Trebuchet MS", Helvetica, sans-serif;
 }
-
 .area-lp{
     background: rgba(255,255,255,0.8);
 }
-
 .logo-lp {
     width: 16%;
     margin-block: 10px;
 }
-
 .logo-lp > img {
     width: 7vw;
     height: 12vh;
 }
-
 @media (max-width: 1243px){ 
     .titulo-primeira-sect{
         font-size: 2.4vw;
     }
 }
-
 @media (max-width: 991.98px) {
     .area-logo-lp{
         display: none;
@@ -35,13 +30,22 @@
         -webkit-overflow-scrolling: touch;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
-      }
-      
+        scrollbar-width: thin;          /* "auto" or "thin" */
+        scrollbar-color: blue orange;   /* scroll thumb and track */
+    }
+    .wrapper::-webkit-scrollbar-track {
+        background: orange;        /* color of the tracking area */
+    }
+    .wrapper::-webkit-scrollbar-thumb {
+        background-color: blue;
+        border-radius: 20px;
+        border: 3px solid orange
+    }
     .slider {
         display: flex;
         flex-wrap: nowrap;
         border: 0px solid #000;
-      }
+    }
     .slider > div{
         border: 0px solid #000;
         margin-inline: 10px;
@@ -60,10 +64,8 @@
         /* pointer-events: none; Ensure these divs don't block interactions */
         transition: background-color 0.3s ease; /* Smooth transition */
         background-color: transparent;
-
     }
 }
-
 @media (max-width: 630px){
     .titulo-primeira-sect{
         font-size: 4vw;
@@ -73,7 +75,6 @@
         height: 10vh !important;
     }
 }
-
 @media (max-width: 426px){
     .titulo-primeira-sect{
         font-size: 1em;
@@ -83,7 +84,6 @@
         height: 10vh !important;
     }
 }
-
 @media (min-width: 992px){ 
     .slide{
         display: none;        
