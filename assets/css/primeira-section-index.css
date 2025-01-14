@@ -31,23 +31,20 @@
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         scrollbar-width: thin;          /* "auto" or "thin" */
-        scrollbar-color: blue orange;   /* scroll thumb and track */
+        scrollbar-color: rgba(0,0,0,0.1) transparent;   /* scroll thumb and track */
     }
     .wrapper::-webkit-scrollbar-track {
-        background: orange;        /* color of the tracking area */
+        background: transparent;        /* color of the tracking area */
     }
     .wrapper::-webkit-scrollbar-thumb {
-        background-color: blue;
+        background-color: transparent;
         border-radius: 20px;
-        border: 3px solid orange
     }
     .slider {
         display: flex;
         flex-wrap: nowrap;
-        border: 0px solid #000;
     }
     .slider > div{
-        border: 0px solid #000;
         margin-inline: 10px;
     }
     .slider > div > img {
