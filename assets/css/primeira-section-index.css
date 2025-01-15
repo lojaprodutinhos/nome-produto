@@ -57,7 +57,7 @@
         width: 50px;
         height: 50px;
         text-align: center;
-        color: rgba(255,255,255,0.3); 
+        color: rgba(0,0,0,0.1); 
         /* pointer-events: none; Ensure these divs don't block interactions */
         transition: background-color 0.3s ease; /* Smooth transition */
         background-color: transparent;
