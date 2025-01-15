@@ -8,14 +8,12 @@ footer{
     text-align: left;
     padding-inline: 2vw;
 }
-
 .primeira-parte-footer > div > p {
     text-align: justify;
 }
 .margin-minus{
     margin-bottom: -3px;
 }
-
 .segunda-parte-footer{
     text-align: end;
     padding-inline: 2vw;
@@ -44,16 +42,13 @@ footer{
         width: 100% !important;
         padding-bottom: 2.5vh;
     }
-
     .primeira-parte-footer > div {
         width: 90% !important;
         margin: auto;
     }
-
     .primeira-parte-footer > div > p {
         text-align: justify;
     }
-
     .segunda-parte-footer{
         width: 100% !important;
         justify-content: center;
