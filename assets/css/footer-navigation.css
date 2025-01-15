@@ -46,7 +46,7 @@ footer{
     }
 
     .primeira-parte-footer > div {
-        width: 80% !important;
+        width: 90% !important;
         margin: auto;
     }
 
@@ -61,7 +61,7 @@ footer{
         text-align: end;
     }
     .segunda-parte-footer > div{
-        width: 80% !important;       
+        width: 90% !important;       
     }
     .terceira-parte-footer{
         display: flex;
@@ -71,7 +71,7 @@ footer{
         justify-content: center;
     }
     .terceira-parte-footer > div{
-        width: 40% !important;
+        width: 45% !important;
         align-content: center;
     }
     .terceira-parte-footer > div > p{
