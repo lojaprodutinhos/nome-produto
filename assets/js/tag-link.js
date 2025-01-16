@@ -9,8 +9,8 @@ const response = await fetch(file);
     }
 }
 
-loadHTML("#header-site", "sections/header.html");
-loadHTML("#footer-site", "sections/footer.html");
-loadHTML("#primeira-sect", "sections/primeira-section-index.html");
-loadHTML("#segunda-sect", "sections/segunda-section-index.html");
-loadHTML("#terceira-sect", "sections/terceira-section-index.html");
+loadHTML("#header-site", "../sections/header.html");
+loadHTML("#footer-site", "../sections/footer.html");
+loadHTML("#primeira-sect", "../sections/primeira-section-index.html");
+loadHTML("#segunda-sect", "../sections/segunda-section-index.html");
+loadHTML("#terceira-sect", "../sections/terceira-section-index.html");
