@@ -1,0 +1,43 @@
+/* area de filtro */
+.filtro-area{
+    width: 25%;
+}
+/* .topics{
+} */
+.topics > div{
+    border-width: thin;
+    border-top: 0.5px solid rgba(0,0,0, 0.1);
+    text-align: left;
+    padding-block: 10px;
+}
+.topic-item{
+    margin-block: 10px;
+    text-decoration: none;
+    color: rgba(0,0,0, 0.8);
+    font-family: "brandon-grotesque", Sans-serif;
+    text-transform: uppercase;
+    font-size: .875em;
+    font-weight: 600;
+}
+.fa-caret-down{
+    margin-top: 4px;
+    float:right;
+}
+.area-content {
+    width: 100%;
+    padding: 0px;
+    align-content: center;
+    font-family: "brandon-grotesque", Sans-serif;
+    text-transform: uppercase;
+    font-size: 2vh;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 10px;
+}
+.area-content > p{
+    opacity: 0.6;
+    margin: 0px;
+}
+#subscribeNews{
+    float: right;
+}

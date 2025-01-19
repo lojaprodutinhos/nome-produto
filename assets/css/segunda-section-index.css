@@ -7,7 +7,7 @@
 }
 .area-content {
     width: 16%;
-    height: 10vh;
+    height: 80px;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 50px;
@@ -15,20 +15,16 @@
     background: rgba(255,255,255,0.8);
     font-family: "brandon-grotesque", Sans-serif;
     text-transform: uppercase;
-    font-size: 2vh;
+    font-size: 1em;
     font-weight: 600;
     text-align: center;
 }
 .area-content > p{
-    opacity: 0.6;
+    opacity: 0.6; 
 }
 
-@media (max-width: 991.98px){
-    .topic{
-        display: none;
-    }
-    .wrapper-topics {
-        width: 100%;
+@media (max-width: 1363px){
+    .topics {
         overflow-x: scroll;
         -webkit-overflow-scrolling: touch;
         scroll-snap-type: x mandatory;
@@ -36,37 +32,16 @@
         scrollbar-width: thin;          /* "auto" or "thin" */
         scrollbar-color: rgba(0,0,0,0.1) transparent;   /* scroll thumb and track */
     }
-    .wrapper-topics::-webkit-scrollbar-track {
+    .topics::-webkit-scrollbar-track {
         background: transparent;        /* color of the tracking area */
     }
-    .wrapper-topics::-webkit-scrollbar-thumb {
+    .topics::-webkit-scrollbar-thumb {
         background-color: transparent;
         border-radius: 20px;
     }
-    .slider-topics {
-        width: 100%;
+    .area-topics {
+        width: 1363px;
         display: flex;
         flex-wrap: nowrap;
-    }
-    .slide-content {
-        height: 80px;
-        border-radius: 50px;
-        align-content: center;
-        background: rgba(255,255,255,0.8);
-        font-family: "brandon-grotesque", Sans-serif;
-        text-transform: uppercase;
-        font-size: 2vh;
-        font-weight: 600;
-        text-align: center;
-        margin-inline: 10px;
-    }
-    .slide-content > p{
-        opacity: 0.6;
-        width: 144px;
-    }
-}
-@media (min-width: 992px){
-    .topic-sm{
-        display: none;
     }
 }
