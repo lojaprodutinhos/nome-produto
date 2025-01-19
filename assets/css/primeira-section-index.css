@@ -12,6 +12,9 @@
     width: 6rem;
     height: 6rem;
 }
+.angle-carousel{
+    display: none;
+}
 @media (max-width: 1243px){ 
     .titulo-primeira-sect{
         font-size: 2.4vw;
@@ -50,6 +53,7 @@
         margin-inline: 10px;
     }
     .angle-carousel{
+        display: block;
         translate: 0% -55px;
         border-radius: 50%;
         width: 50px;
