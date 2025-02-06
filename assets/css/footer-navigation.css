@@ -5,33 +5,16 @@ footer{
     padding-block: 3vh;
 }
 .primeira-parte-footer{
-    text-align: left;
     padding-inline: 2vw;
-}
-.primeira-parte-footer > div > p {
-    text-align: justify;
-}
-.margin-minus{
-    margin-bottom: -3px;
 }
 .segunda-parte-footer{
-    text-align: end;
     padding-inline: 2vw;
-    padding-block: 1.6vh;
 }
-.terceira-parte-footer{
-    text-align: justify;
-    padding-inline: 2vw;
-    padding-block: 1.6vh;
+.terceira-parte-footer div{
+    justify-self: center;
 }
-.icones-footer {
-    color: #fff;
-}
-.logo-seguranca-footer {
-    text-align: end;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.menu-footer{
+    margin-block: 0.2rem;
 }
 @media (max-width: 991.98px) {
     .footer-nav{
@@ -39,41 +22,12 @@ footer{
         font-size: 0.7rem;
     }
     .primeira-parte-footer{
-        width: 100% !important;
-        padding-bottom: 2.5vh;
-    }
-    .primeira-parte-footer > div {
-        width: 90% !important;
-        margin: auto;
-    }
-    .primeira-parte-footer > div > p {
-        text-align: justify;
+        padding-block: 1vw;
     }
     .segunda-parte-footer{
-        width: 100% !important;
-        justify-content: center;
-        display: flex;
-        text-align: end;
-    }
-    .segunda-parte-footer > div{
-        width: 90% !important;       
+        padding-block: 1vw;
     }
     .terceira-parte-footer{
-        display: flex;
-        width: 100% !important;
-        padding-inline: 2vw;
-        padding-block: 1.6vh;
-        justify-content: center;
-    }
-    .terceira-parte-footer > div{
-        width: 45% !important;
-        align-content: center;
-    }
-    .terceira-parte-footer > div > p{
-        text-align: start;
-    }
-    .logo-seguranca-footer {
-        text-align: end;
-        position: relative !important;
+        padding-block: 1vw;
     }
 }

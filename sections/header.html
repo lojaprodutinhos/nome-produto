@@ -1,36 +1,43 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow position-relative">
-    <div class="container-fluid">
-        <div class="col-3 logo-clp p-2">
-            <a href="#">
-                <img src="../imagens/logo/LOGO_AE1.png" alt="package" width="150" height="50">
-            </a>
-        </div>
-        <!-- Botão Toggle -->
-        <button 
-            class="navbar-toggler position-absolute top-0 end-0" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarNav" 
-            aria-controls="navbarNav" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation"
-            id="btn-menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <div class="w-100"> 
+        <div class="d-flex flex-row position-relative fix-nav">
+            <div class="col justify-content-center p-2" id="logo-ae">
+                <a href="#">
+                    <img src="../imagens/logo/LOGO_AE1.png" alt="package" width="150" height="50">
+                </a>
+            </div> 
+            <!-- Botão Toggle -->
+            <button 
+                class="navbar-toggler position-absolute top-0 end-0" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+                id="btn-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- Links do Menu -->
-        <div class="collapse col navbar-collapse justify-content-around" id="navbarNav">
-            <div class="col-5 navbar-item pesquisa">
-            </div>
-            <div class="col-5 navbar-item menuNavBar">
-                <ul class="navbar-nav justify-content-between">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sobre.html">Sobre</a>
-                    </li>
-                </ul>
+            <!-- Links do Menu -->
+            <div class="collapse col navbar-collapse" id="navbarNav">
+                <div class="row w-100 justify-content-center">
+                    <div class="navbar-item col-3 justify-content-center align-content-center menuNavBar">
+                        <ul class="navbar-nav justify-content-between">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Início</a>
+                            </li>
+                            <li class="logo-collapse">
+                                <a href="#">
+                                    <img src="../imagens/logo/LOGO_AE1.png" alt="package" width="150" height="50">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre.html">Sobre</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

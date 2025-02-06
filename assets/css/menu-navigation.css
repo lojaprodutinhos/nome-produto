@@ -7,48 +7,27 @@
     font-weight: 600;
     opacity: 0.5;
 }
-
-.logo-clp{
-    margin: auto;
+#logo-ae{
+    display: none;
 }
-
 #btn-menu{
-    translate: 0px 23px;
+    translate: 0px 45%;
     border: none;
 }
-
 @media (max-width: 991.98px) {
-    .logo-clp{
-        width: auto;
+    .fix-nav {
+        flex-direction: column !important;
     }
-    
+    #logo-ae{
+        display: flex !important;
+    }
+    .logo-collapse{
+        display: none;
+    }
     .navbar-collapse {
         display: table;
-        width: 50%;
     }
-
     .navbar-toggler:focus {
         box-shadow: none;
-    }
-
-    .navbar-expand-lg .navbar-collapse .pesquisa {
-        display: table-footer-group;
-    }
-
-    .navbar-expand-lg .navbar-collapse .menuNavBar{
-        display: table-header-group;
-    }
-
-    .navbar-expand-lg .navbar-collapse .navbar-item {
-    margin: auto;
-    text-align: center;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .navbar-expand-lg .navbar-collapse .navbar-item {
-        margin: auto;
-        text-align: left;
-        width: 100%;
     }
 }

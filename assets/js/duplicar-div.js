@@ -8,7 +8,7 @@ function duplicateDiv(duplicateTag) {
             return;
         }
         const parent = originalDiv.parentNode;
-        for (let i = 1; i <= 3; i++) {
+        for (let i = 1; i <= 14; i++) {
             // Cria uma nova div
             const newDiv = document.createElement('div');
             //Copia a classe
